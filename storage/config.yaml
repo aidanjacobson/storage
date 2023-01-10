@@ -1,0 +1,12 @@
+name: Storage Server
+version: 1.0.0
+slug: "storage"
+description: ""
+arch:
+  - armhf
+  - armv7
+  - aarch64
+  - amd64
+  - i386
+ports:
+  6969/tcp: 6969
