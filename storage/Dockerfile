@@ -1,5 +1,7 @@
 ARG BUILD_FROM
 FROM $BUILD_FROM
 
-COPY run.py /
-CMD ["python", "/run.py"]
+COPY run.sh /
+COPY server.py /
+RUN chmod a+x /run.sh
+CMD ["/run.sh"]
